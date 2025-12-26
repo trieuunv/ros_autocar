@@ -1,0 +1,2 @@
+car_project
+-DCATKIN_DEVEL_PREFIX=/home/sonhaha/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sonhaha/catkin_ws/install -G Unix Makefiles

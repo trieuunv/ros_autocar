@@ -1,0 +1,8 @@
+prefix=/home/sonhaha/catkin_ws/devel
+
+Name: car_project
+Description: Description of car_project
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

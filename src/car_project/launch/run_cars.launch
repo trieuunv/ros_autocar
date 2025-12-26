@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find car_project)/worlds/complex_maze.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+  <group ns="leader">
+    <node name="spawn_car" pkg="gazebo_ros" type="spawn_model" args="-urdf -model leader -x -8 -y 0 -z 0.1 -file $(find car_project)/urdf/leader_car.urdf" />
+  </group>
+
+  <group ns="follower">
+    <node name="spawn_car" pkg="gazebo_ros" type="spawn_model" args="-urdf -model follower -x -10 -y 0 -z 0.1 -file $(find car_project)/urdf/follower_car.urdf" />
+  </group>
+</launch>

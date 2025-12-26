@@ -1,0 +1,307 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name='tunnel_straight_left'>
+      <static>1</static>
+      <pose>-5 1.5 0.5 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Bricks</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='tunnel_straight_right'>
+      <static>1</static>
+      <pose>-5 -1.5 0.5 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Bricks</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='tunnel_corner_1'>
+      <static>1</static>
+      <pose>0.9 5 0.5 0 0 1.57</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>10 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Bricks</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='tunnel_corner_2'>
+      <static>1</static>
+      <pose>-0.9 6.5 0.5 0 0 1.57</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>7 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>7 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Bricks</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='border_front'>
+      <static>1</static>
+      <pose>20 10 0.5 0 0 1.57</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>40 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>40 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Wood</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='border_back'>
+      <static>1</static>
+      <pose>-10 10 0.5 0 0 1.57</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>40 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>40 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Wood</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='border_left'>
+      <static>1</static>
+      <pose>5 30 0.5 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>30 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>30 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Wood</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='border_right'>
+      <static>1</static>
+      <pose>5 -10 0.5 0 0 0</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>30 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>30 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Wood</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_0'>
+      <static>1</static>
+      <pose>18.71411500504143 14.571600863934602 0.5 0 0 2.366983678210422</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>3.549696357582071 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>3.549696357582071 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_1'>
+      <static>1</static>
+      <pose>12.166789040450684 20.27399996410468 0.5 0 0 0.1709969421721105</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.4875654450442117 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.4875654450442117 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_2'>
+      <static>1</static>
+      <pose>13.945230663631808 20.993799451429705 0.5 0 0 0.3330441324757562</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.7959463695801412 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.7959463695801412 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_3'>
+      <static>1</static>
+      <pose>17.38529177653073 24.973932644850812 0.5 0 0 2.4886967918490726</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.6560816674524976 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.6560816674524976 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_4'>
+      <static>1</static>
+      <pose>15.229157512977098 15.6934468344775 0.5 0 0 0.3724245305559048</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.2489129105617165 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.2489129105617165 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_5'>
+      <static>1</static>
+      <pose>17.389614521045196 22.46340715716873 0.5 0 0 3.09128351034932</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.9769712925442313 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.9769712925442313 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_6'>
+      <static>1</static>
+      <pose>19.309957675690708 6.144383292113326 0.5 0 0 1.0677367710643328</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.217540906748766 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.217540906748766 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_7'>
+      <static>1</static>
+      <pose>7.525134111350734 24.3861163523945 0.5 0 0 0.7863503332888411</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.8418087719747103 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.8418087719747103 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_8'>
+      <static>1</static>
+      <pose>10.977852385063022 2.116315888205722 0.5 0 0 0.12889091726908103</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.791123908252359 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.791123908252359 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_9'>
+      <static>1</static>
+      <pose>9.273993609072086 16.83707773889598 0.5 0 0 1.5452640959146047</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.1397390186933585 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.1397390186933585 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_10'>
+      <static>1</static>
+      <pose>17.670031779364763 9.219511533382265 0.5 0 0 1.014582162624001</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.815623805839985 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.815623805839985 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_11'>
+      <static>1</static>
+      <pose>13.921092253136123 21.678416512045647 0.5 0 0 2.2181422455454443</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.9327946882135933 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.9327946882135933 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_12'>
+      <static>1</static>
+      <pose>16.159735339519465 9.425669883716173 0.5 0 0 0.21236472897267994</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>1.5476806231196438 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.5476806231196438 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_13'>
+      <static>1</static>
+      <pose>6.533704886853654 10.522067481356432 0.5 0 0 1.5688316425171716</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>2.043286422311759 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2.043286422311759 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+    <model name='rand_wall_14'>
+      <static>1</static>
+      <pose>12.514228336691364 1.472128794439473 0.5 0 0 2.674704430886265</pose>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry><box><size>3.397467984005111 0.2 1</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>3.397467984005111 0.2 1</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/RustySteel</name></script></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
